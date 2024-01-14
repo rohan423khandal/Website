@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table, th, td {
+          border: 1px solid rgb(62, 2, 2);
+          border-radius: 10px;
+        
+        }
+    table{
+        border-style: dotted;
+    }
+    td{
+        background-color: rgb(248, 240, 228);
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }   
+    th {
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 20px;
+     padding-left: 30px;
+     padding-right: 40px;
+    }
+    th:hover {background-color: #D6EEEE;}
+    td:hover {background-color: #D6EEEE;}   
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Registration</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            cursor: pointer;
-        }
-    </style>
+    <title>My First Step in Web Devlopment</title>
 </head>
 <body>
+    <h1>Text Formatting In HTML</h1>
+    
+    <table style="width:100%">
+        <caption style="font-family:verdana;", style="font-size:400%;">Table for text formatting</caption>
+        <tr>
+          <th style="width:10%">Elements</th>
+          <th style="width:30%">Formatting</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>"b"</td>
+          <td>Bold text</td>
+          <td><b>This text is bold</b></td>
+        </tr>
+        <tr>
+            <td>"i"</td>
+            <td>italic text</td>
+            <td><i>This text is italic</i></td>
+          </tr>
+          <tr>
+            <td>"em"</td>
+            <td>emphasized text</td>
+            <td><em>This text is emphasized</em></td>
+          </tr>
+          <tr>
+            <td>"small"</td>
+            <td>smaller text</td>
+            <td><small>This is some smaller text.</small></td>
+          </tr>
+          <tr>
+            <td>"mark"</td>
+            <td>Marked text</td>
+            <td>Do not forget to buy <mark>milk</mark> today</td>
+          </tr>
+          <tr>
+            <td>"del"</td>
+            <td>Deleted text</td>
+            <td>favorite color is <del>blue</del> red</td>
+          </tr>
+          <tr>
+            <td>"sub"</td>
+            <td>subscript text</td>
+            <td>This is <sub>subscripted</sub> text.</td>
+          </tr>
+          <tr>
+            <td>"sup"</td>
+            <td>superscript text</td>
+            <td>This is <sup>superscripted</sup> text</td>
+          </tr>
 
-    <header>
-        <h1>Employee Registration</h1>
-    </header>
-
-    <form action="submit_registration.php" method="post">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
-
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="position">Position:</label>
-        <input type="text" id="position" name="position" required>
-
-        <label for="department">Department:</label>
-        <input type="text" id="department" name="department" required>
-
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-        </select>
-
-        <input type="submit" value="Submit">
-    </form>
-
+      </table>
+      
 </body>
 </html>
